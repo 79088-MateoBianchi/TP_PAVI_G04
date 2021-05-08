@@ -19,10 +19,6 @@ namespace Inmobiliaria
                 components.Dispose();
             }
             base.Dispose(disposing);
-            else
-	{
-
-	}
         }
 
         #region Windows Form Designer generated code
