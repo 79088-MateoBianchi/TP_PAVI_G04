@@ -47,8 +47,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccesoADatos\AD_Barrios.cs" />
     <Compile Include="AccesoADatos\AD_Empleados.cs" />
+    <Compile Include="AccesoADatos\AD_Monedas.cs" />
+    <Compile Include="AccesoADatos\AD_Propiedades.cs" />
+    <Compile Include="AccesoADatos\AD_TiposOperaciones.cs" />
+    <Compile Include="AccesoADatos\AD_TiposPropiedades.cs" />
     <Compile Include="Entidades\Empleados.cs" />
+    <Compile Include="Entidades\Propiedad.cs" />
+    <Compile Include="frmABMPropiedades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmABMPropiedades.Designer.cs">
+      <DependentUpon>frmABMPropiedades.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmABMPropiedades.resx">
+      <DependentUpon>frmABMPropiedades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>

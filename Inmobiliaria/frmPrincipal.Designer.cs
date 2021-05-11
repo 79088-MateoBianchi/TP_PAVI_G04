@@ -31,19 +31,18 @@ namespace Inmobiliaria
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarEliminarEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarEliminarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.propiedadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarEliminarPropiedadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vistasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.propiedadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarEliminarEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modificarEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarEliminarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modificarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarEliminarPropiedadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modificarPropiedadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +70,69 @@ namespace Inmobiliaria
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
+            // empleadosToolStripMenuItem
+            // 
+            this.empleadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarEliminarEmpleadoToolStripMenuItem,
+            this.modificarEmpleadoToolStripMenuItem});
+            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.empleadosToolStripMenuItem.Text = "Empleados";
+            // 
+            // registrarEliminarEmpleadoToolStripMenuItem
+            // 
+            this.registrarEliminarEmpleadoToolStripMenuItem.Name = "registrarEliminarEmpleadoToolStripMenuItem";
+            this.registrarEliminarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.registrarEliminarEmpleadoToolStripMenuItem.Text = "Registrar/Eliminar Empleado";
+            // 
+            // modificarEmpleadoToolStripMenuItem
+            // 
+            this.modificarEmpleadoToolStripMenuItem.Name = "modificarEmpleadoToolStripMenuItem";
+            this.modificarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.modificarEmpleadoToolStripMenuItem.Text = "Modificar Empleado";
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarEliminarClienteToolStripMenuItem,
+            this.modificarClienteToolStripMenuItem});
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            // 
+            // registrarEliminarClienteToolStripMenuItem
+            // 
+            this.registrarEliminarClienteToolStripMenuItem.Name = "registrarEliminarClienteToolStripMenuItem";
+            this.registrarEliminarClienteToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.registrarEliminarClienteToolStripMenuItem.Text = "Registrar/Eliminar Cliente";
+            // 
+            // modificarClienteToolStripMenuItem
+            // 
+            this.modificarClienteToolStripMenuItem.Name = "modificarClienteToolStripMenuItem";
+            this.modificarClienteToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.modificarClienteToolStripMenuItem.Text = "Modificar Cliente";
+            // 
+            // propiedadesToolStripMenuItem
+            // 
+            this.propiedadesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarEliminarPropiedadesToolStripMenuItem});
+            this.propiedadesToolStripMenuItem.Name = "propiedadesToolStripMenuItem";
+            this.propiedadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.propiedadesToolStripMenuItem.Text = "Propiedades";
+            // 
+            // registrarEliminarPropiedadesToolStripMenuItem
+            // 
+            this.registrarEliminarPropiedadesToolStripMenuItem.Name = "registrarEliminarPropiedadesToolStripMenuItem";
+            this.registrarEliminarPropiedadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarEliminarPropiedadesToolStripMenuItem.Text = "ABM Propiedades";
+            this.registrarEliminarPropiedadesToolStripMenuItem.Click += new System.EventHandler(this.registrarEliminarPropiedadesToolStripMenuItem_Click);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
@@ -88,75 +150,6 @@ namespace Inmobiliaria
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
-            // 
-            // empleadosToolStripMenuItem
-            // 
-            this.empleadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registrarEliminarEmpleadoToolStripMenuItem,
-            this.modificarEmpleadoToolStripMenuItem});
-            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.empleadosToolStripMenuItem.Text = "Empleados";
-            // 
-            // clientesToolStripMenuItem
-            // 
-            this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registrarEliminarClienteToolStripMenuItem,
-            this.modificarClienteToolStripMenuItem});
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clientesToolStripMenuItem.Text = "Clientes";
-            // 
-            // propiedadesToolStripMenuItem
-            // 
-            this.propiedadesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registrarEliminarPropiedadesToolStripMenuItem,
-            this.modificarPropiedadToolStripMenuItem});
-            this.propiedadesToolStripMenuItem.Name = "propiedadesToolStripMenuItem";
-            this.propiedadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.propiedadesToolStripMenuItem.Text = "Propiedades";
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.salirToolStripMenuItem.Text = "Salir";
-            // 
-            // registrarEliminarEmpleadoToolStripMenuItem
-            // 
-            this.registrarEliminarEmpleadoToolStripMenuItem.Name = "registrarEliminarEmpleadoToolStripMenuItem";
-            this.registrarEliminarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.registrarEliminarEmpleadoToolStripMenuItem.Text = "Registrar/Eliminar Empleado";
-            // 
-            // modificarEmpleadoToolStripMenuItem
-            // 
-            this.modificarEmpleadoToolStripMenuItem.Name = "modificarEmpleadoToolStripMenuItem";
-            this.modificarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.modificarEmpleadoToolStripMenuItem.Text = "Modificar Empleado";
-            // 
-            // registrarEliminarClienteToolStripMenuItem
-            // 
-            this.registrarEliminarClienteToolStripMenuItem.Name = "registrarEliminarClienteToolStripMenuItem";
-            this.registrarEliminarClienteToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.registrarEliminarClienteToolStripMenuItem.Text = "Registrar/Eliminar Cliente";
-            // 
-            // modificarClienteToolStripMenuItem
-            // 
-            this.modificarClienteToolStripMenuItem.Name = "modificarClienteToolStripMenuItem";
-            this.modificarClienteToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.modificarClienteToolStripMenuItem.Text = "Modificar Cliente";
-            // 
-            // registrarEliminarPropiedadesToolStripMenuItem
-            // 
-            this.registrarEliminarPropiedadesToolStripMenuItem.Name = "registrarEliminarPropiedadesToolStripMenuItem";
-            this.registrarEliminarPropiedadesToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
-            this.registrarEliminarPropiedadesToolStripMenuItem.Text = "Registrar/Eliminar Propiedad";
-            // 
-            // modificarPropiedadToolStripMenuItem
-            // 
-            this.modificarPropiedadToolStripMenuItem.Name = "modificarPropiedadToolStripMenuItem";
-            this.modificarPropiedadToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
-            this.modificarPropiedadToolStripMenuItem.Text = "Modificar Propiedad";
             // 
             // frmPrincipal
             // 
@@ -187,7 +180,6 @@ namespace Inmobiliaria
         private System.Windows.Forms.ToolStripMenuItem modificarClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem propiedadesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarEliminarPropiedadesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem modificarPropiedadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vistasToolStripMenuItem;
