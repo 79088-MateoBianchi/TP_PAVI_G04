@@ -47,8 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccesoADatos\AD_Edificios.cs" />
     <Compile Include="AccesoADatos\AD_Clientes.cs" />
     <Compile Include="AccesoADatos\AD_Empleados.cs" />
+    <Compile Include="AltaEdificio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaEdificio.Designer.cs">
+      <DependentUpon>AltaEdificio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Edificio.cs" />
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\Empleados.cs" />
     <Compile Include="frmLogin.cs">
@@ -65,6 +73,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AltaEdificio.resx">
+      <DependentUpon>AltaEdificio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>

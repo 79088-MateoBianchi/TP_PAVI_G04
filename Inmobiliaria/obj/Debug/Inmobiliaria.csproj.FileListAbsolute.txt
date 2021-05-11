@@ -9,6 +9,7 @@ F:\FACULTAD\3° AÑO\Programacion de Aplicaciones Visuales I\TP\Proyecto\TP_PAVI
 F:\FACULTAD\3° AÑO\Programacion de Aplicaciones Visuales I\TP\Proyecto\TP_PAVI_G04\README.md\Inmobiliaria\obj\Debug\Inmobiliaria.exe
 F:\FACULTAD\3° AÑO\Programacion de Aplicaciones Visuales I\TP\Proyecto\TP_PAVI_G04\README.md\Inmobiliaria\obj\Debug\Inmobiliaria.pdb
 F:\FACULTAD\3° AÑO\Programacion de Aplicaciones Visuales I\TP\Proyecto\TP_PAVI_G04\README.md\Inmobiliaria\obj\Debug\Inmobiliaria.frmPrincipal.resources
+<<<<<<< HEAD
 C:\Users\tisse\Source\Repos\TP_PAVI_G04\Inmobiliaria\bin\Debug\Inmobiliaria.exe.config
 C:\Users\tisse\Source\Repos\TP_PAVI_G04\Inmobiliaria\bin\Debug\Inmobiliaria.exe
 C:\Users\tisse\Source\Repos\TP_PAVI_G04\Inmobiliaria\bin\Debug\Inmobiliaria.pdb
@@ -20,3 +21,17 @@ C:\Users\tisse\Source\Repos\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.cspr
 C:\Users\tisse\Source\Repos\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.csproj.CoreCompileInputs.cache
 C:\Users\tisse\Source\Repos\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.exe
 C:\Users\tisse\Source\Repos\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.pdb
+=======
+C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\bin\Debug\Inmobiliaria.exe.config
+C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\bin\Debug\Inmobiliaria.exe
+C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\bin\Debug\Inmobiliaria.pdb
+C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.csprojAssemblyReference.cache
+C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.AltaEdificio.resources
+C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.frmLogin.resources
+C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.frmPrincipal.resources
+C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.Properties.Resources.resources
+C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.csproj.GenerateResource.cache
+C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.csproj.CoreCompileInputs.cache
+C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.exe
+C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.pdb
+>>>>>>> 5e0c5621ed21a9e9cc796de772449f5eb99bffbd

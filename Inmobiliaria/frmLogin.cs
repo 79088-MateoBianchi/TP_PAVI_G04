@@ -34,8 +34,9 @@ namespace Inmobiliaria
                 {
                     resultado = AD_Empleados.ValidarUsuario(nombreDeUsuario, password);
                     if (resultado)
-                    { 
+                    {
                         frmPrincipal ventana = new frmPrincipal();
+                        //AltaEdificio ventana = new AltaEdificio();       TEST ABM EDIFICIOS
                         ventana.Show();
                         this.Hide();
                     }
