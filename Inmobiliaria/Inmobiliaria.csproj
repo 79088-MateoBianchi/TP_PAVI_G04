@@ -47,7 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccesoADatos\AD_Clientes.cs" />
     <Compile Include="AccesoADatos\AD_Empleados.cs" />
+    <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\Empleados.cs" />
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
