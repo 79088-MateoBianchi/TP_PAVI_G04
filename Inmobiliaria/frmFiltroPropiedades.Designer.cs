@@ -29,6 +29,7 @@ namespace Inmobiliaria
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFiltroPropiedades));
             this.lblPropiedad = new System.Windows.Forms.Label();
             this.lblDesigCat = new System.Windows.Forms.Label();
             this.txtDesigCat = new System.Windows.Forms.TextBox();
@@ -43,9 +44,9 @@ namespace Inmobiliaria
             this.chkMostrarTodasProp = new System.Windows.Forms.CheckBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.lblMensaje = new System.Windows.Forms.Label();
+            this.lblMensaje2 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.lblMensaje2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grillaPropiedades)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,31 +176,9 @@ namespace Inmobiliaria
             this.lblMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMensaje.Location = new System.Drawing.Point(23, 401);
             this.lblMensaje.Name = "lblMensaje";
-            this.lblMensaje.Size = new System.Drawing.Size(427, 17);
+            this.lblMensaje.Size = new System.Drawing.Size(452, 17);
             this.lblMensaje.TabIndex = 28;
-            this.lblMensaje.Text = "Para modificar o eliminar un usuario debe seleccionarlo de la grilla";
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.BackgroundImage = global::Inmobiliaria.Properties.Resources.iconfinder_add1__32378;
-            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAgregar.Location = new System.Drawing.Point(548, 424);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(72, 74);
-            this.btnAgregar.TabIndex = 4;
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackgroundImage = global::Inmobiliaria.Properties.Resources.iconfinder_2_2739118;
-            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSalir.Location = new System.Drawing.Point(662, 424);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(70, 74);
-            this.btnSalir.TabIndex = 5;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            this.lblMensaje.Text = "Para modificar o eliminar una propiedad debe seleccionarla de la grilla";
             // 
             // lblMensaje2
             // 
@@ -210,6 +189,28 @@ namespace Inmobiliaria
             this.lblMensaje2.Size = new System.Drawing.Size(359, 17);
             this.lblMensaje2.TabIndex = 29;
             this.lblMensaje2.Text = "Para actualizar la grilla, vuelva a realizar una busqueda";
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackgroundImage = global::Inmobiliaria.Properties.Resources.iconfinder_add1__32378;
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAgregar.Location = new System.Drawing.Point(548, 424);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(74, 74);
+            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackgroundImage = global::Inmobiliaria.Properties.Resources.iconfinder_2_2739118;
+            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSalir.Location = new System.Drawing.Point(662, 424);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(74, 74);
+            this.btnSalir.TabIndex = 5;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmFiltroPropiedades
             // 
@@ -226,9 +227,10 @@ namespace Inmobiliaria
             this.Controls.Add(this.txtDesigCat);
             this.Controls.Add(this.lblDesigCat);
             this.Controls.Add(this.lblPropiedad);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmFiltroPropiedades";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Filtro de Propiedades";
+            this.Text = "ABM de Propiedades";
             this.Load += new System.EventHandler(this.frmFiltroPropiedades_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grillaPropiedades)).EndInit();
             this.ResumeLayout(false);

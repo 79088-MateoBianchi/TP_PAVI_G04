@@ -29,6 +29,7 @@ namespace Inmobiliaria
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAltaPropiedades));
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -357,9 +358,9 @@ namespace Inmobiliaria
             // btnLimpiarCampos
             // 
             this.btnLimpiarCampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarCampos.Location = new System.Drawing.Point(58, 404);
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(58, 415);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
-            this.btnLimpiarCampos.Size = new System.Drawing.Size(86, 74);
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(80, 74);
             this.btnLimpiarCampos.TabIndex = 12;
             this.btnLimpiarCampos.Text = "Limpiar Campos";
             this.btnLimpiarCampos.UseVisualStyleBackColor = true;
@@ -372,7 +373,7 @@ namespace Inmobiliaria
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(619, 415);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(86, 74);
+            this.btnCancelar.Size = new System.Drawing.Size(74, 74);
             this.btnCancelar.TabIndex = 11;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -384,7 +385,7 @@ namespace Inmobiliaria
             this.btnGuardarPropiedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarPropiedad.Location = new System.Drawing.Point(733, 415);
             this.btnGuardarPropiedad.Name = "btnGuardarPropiedad";
-            this.btnGuardarPropiedad.Size = new System.Drawing.Size(86, 74);
+            this.btnGuardarPropiedad.Size = new System.Drawing.Size(74, 74);
             this.btnGuardarPropiedad.TabIndex = 10;
             this.btnGuardarPropiedad.UseVisualStyleBackColor = true;
             this.btnGuardarPropiedad.Click += new System.EventHandler(this.btnGuardarPropiedad_Click);
@@ -449,6 +450,7 @@ namespace Inmobiliaria
             this.Controls.Add(this.txtDesignacionCatastral);
             this.Controls.Add(this.lblDesignacionCatastral);
             this.Controls.Add(this.lblAltaPropiedades);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAltaPropiedades";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alta de Propiedades";

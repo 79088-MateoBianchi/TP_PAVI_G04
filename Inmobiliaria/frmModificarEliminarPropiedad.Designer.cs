@@ -29,8 +29,7 @@ namespace Inmobiliaria
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmModificarEliminarPropiedad));
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -63,29 +62,9 @@ namespace Inmobiliaria
             this.lblDesignacionCatastral = new System.Windows.Forms.Label();
             this.lblPropiedades = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.BackgroundImage = global::Inmobiliaria.Properties.Resources.iconfinder_compose_1055085;
-            this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnModificar.Location = new System.Drawing.Point(577, 419);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(73, 74);
-            this.btnModificar.TabIndex = 10;
-            this.btnModificar.UseVisualStyleBackColor = true;
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackgroundImage = global::Inmobiliaria.Properties.Resources.iconfinder_trash_bin_garbage_delete_rubbish_waste_3643729;
-            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEliminar.Location = new System.Drawing.Point(72, 419);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(72, 74);
-            this.btnEliminar.TabIndex = 12;
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label10
             // 
@@ -387,14 +366,36 @@ namespace Inmobiliaria
             // 
             // btnSalir
             // 
-            this.btnSalir.BackgroundImage = global::Inmobiliaria.Properties.Resources.iconfinder_2_2739118;
-            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSalir.BackgroundImage = global::Inmobiliaria.Properties.Resources.iconfinder_Cancel_728918;
+            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSalir.Location = new System.Drawing.Point(688, 419);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(70, 74);
+            this.btnSalir.Size = new System.Drawing.Size(74, 74);
             this.btnSalir.TabIndex = 11;
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.BackgroundImage = global::Inmobiliaria.Properties.Resources.iconfinder_compose_1055085;
+            this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnModificar.Location = new System.Drawing.Point(577, 419);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(74, 74);
+            this.btnModificar.TabIndex = 10;
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackgroundImage = global::Inmobiliaria.Properties.Resources.iconfinder_trash_bin_garbage_delete_rubbish_waste_3643729;
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnEliminar.Location = new System.Drawing.Point(72, 419);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(74, 74);
+            this.btnEliminar.TabIndex = 12;
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // frmModificarEliminarPropiedad
             // 
@@ -435,6 +436,7 @@ namespace Inmobiliaria
             this.Controls.Add(this.lblPropiedades);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmModificarEliminarPropiedad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Propiedad Seleccionada";

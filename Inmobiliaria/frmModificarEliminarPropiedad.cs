@@ -103,22 +103,32 @@ namespace Inmobiliaria
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            Propiedad p = ObtenerDatosPropiedad();
-            bool resultado = AD_Propiedades.ActualizarPropiedad(p);
-            if (resultado)
+            if (txtDesignacionCatastral.Text.Equals("") || txtCalle.Text.Equals("") || txtNroCalle.Text.Equals("") || cmbBarrio.SelectedIndex.Equals(-1) || cmbMoneda.SelectedIndex.Equals(-1) || cmbTipoOperacion.SelectedIndex.Equals(-1) || cmbTipoPropiedad.SelectedIndex.Equals(-1) || txtMonto.Text.Equals("") || txtPiso.Text.Equals(""))
             {
-                MessageBox.Show("Propiedad actualizada con exito!");
-                this.Close();
-                //LimpiarCampos();
-                //CargarComboBarrios();
-                //CargarComboMonedas();
-                //CargarComboTiposOperaciones();
-                //CargarComboTiposPropiedades();
+                DialogResult mensaje = MessageBox.Show("Ingrese todos los campos necesarios!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("Error al actualizar la propiedad!");
+
+                DialogResult aviso = MessageBox.Show("¿Desea confirmar las modificaciones realizadas?", "Confirmar modificaciones", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (aviso == DialogResult.Yes)
+                {
+                    Propiedad p = ObtenerDatosPropiedad();
+                    bool resultado = AD_Propiedades.ActualizarPropiedad(p);
+                    if (resultado)
+                    {
+                        MessageBox.Show("Propiedad actualizada con exito!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al actualizar la propiedad!");
+                    }
+                }
+
             }
+
         }
         private Propiedad ObtenerDatosPropiedad()
         {
@@ -137,20 +147,14 @@ namespace Inmobiliaria
 
             return prop;
         }
-        private void LimpiarCampos()
-        {
-            txtDesignacionCatastral.Text = "";
-            txtCalle.Text = "";
-            txtNroCalle.Text = "";
-            txtPiso.Text = "";
-            txtDepartamento.Text = "";
-            txtMonto.Text = "";
-
-        }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult aviso = MessageBox.Show("¿Esta seguro que desea salir?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (aviso == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

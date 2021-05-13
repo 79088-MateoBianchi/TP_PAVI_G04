@@ -105,7 +105,11 @@ namespace Inmobiliaria
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult aviso = MessageBox.Show("¿Esta seguro que desea salir?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (aviso == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void btnGuardarPropiedad_Click(object sender, EventArgs e)

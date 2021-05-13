@@ -113,6 +113,16 @@ namespace Inmobiliaria.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_house_299061 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_house_299061", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_trash_bin_garbage_delete_rubbish_waste_3643729 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_trash-bin-garbage-delete-rubbish-waste_3643729", resourceCulture);

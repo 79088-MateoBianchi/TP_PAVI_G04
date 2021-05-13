@@ -122,6 +122,7 @@ namespace Inmobiliaria
             // 
             // registrarEliminarPropiedadesToolStripMenuItem
             // 
+            this.registrarEliminarPropiedadesToolStripMenuItem.Image = global::Inmobiliaria.Properties.Resources.iconfinder_house_299061;
             this.registrarEliminarPropiedadesToolStripMenuItem.Name = "registrarEliminarPropiedadesToolStripMenuItem";
             this.registrarEliminarPropiedadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registrarEliminarPropiedadesToolStripMenuItem.Text = "ABM Propiedades";

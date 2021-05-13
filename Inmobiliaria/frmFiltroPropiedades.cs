@@ -49,7 +49,11 @@ namespace Inmobiliaria
             }
             else
             {
-                grillaPropiedades.DataSource = AD_Propiedades.GetPropiedadesPorDesigCatastral(int.Parse(txtDesigCat.Text));       
+                grillaPropiedades.DataSource = AD_Propiedades.GetPropiedadesPorDesigCatastral(int.Parse(txtDesigCat.Text));
+                if (grillaPropiedades.Rows.Count == 0)
+                {
+                    MessageBox.Show("No se encontraron resultados!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             txtDesigCat.Text = "";
             txtDesigCat.Focus();
@@ -58,7 +62,11 @@ namespace Inmobiliaria
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult aviso = MessageBox.Show("¿Esta seguro que desea salir?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (aviso == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
