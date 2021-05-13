@@ -371,7 +371,7 @@ namespace Inmobiliaria
             this.btnCancelar.BackgroundImage = global::Inmobiliaria.Properties.Resources.iconfinder_Cancel_728918;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(619, 415);
+            this.btnCancelar.Location = new System.Drawing.Point(731, 415);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(74, 74);
             this.btnCancelar.TabIndex = 11;
@@ -383,7 +383,7 @@ namespace Inmobiliaria
             this.btnGuardarPropiedad.BackgroundImage = global::Inmobiliaria.Properties.Resources.iconfinder_floppy_285657;
             this.btnGuardarPropiedad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnGuardarPropiedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarPropiedad.Location = new System.Drawing.Point(733, 415);
+            this.btnGuardarPropiedad.Location = new System.Drawing.Point(635, 415);
             this.btnGuardarPropiedad.Name = "btnGuardarPropiedad";
             this.btnGuardarPropiedad.Size = new System.Drawing.Size(74, 74);
             this.btnGuardarPropiedad.TabIndex = 10;

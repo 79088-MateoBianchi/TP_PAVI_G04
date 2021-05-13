@@ -150,7 +150,7 @@ namespace Inmobiliaria
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            DialogResult aviso = MessageBox.Show("¿Esta seguro que desea salir?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult aviso = MessageBox.Show("¿Esta seguro que desea cancelar la edicion de la propiedad?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (aviso == DialogResult.Yes)
             {
                 this.Close();

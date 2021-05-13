@@ -44,7 +44,7 @@ namespace Inmobiliaria
             }
             else if (txtDesigCat.Text.Equals(""))
             {
-                MessageBox.Show("Selecciona algun filtro!", "Advertencia!", MessageBoxButtons.OK ,MessageBoxIcon.Exclamation);
+                MessageBox.Show("Selecciona algun filtro!", "Advertencia!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txtDesigCat.Focus();
             }
             else
@@ -62,11 +62,7 @@ namespace Inmobiliaria
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            DialogResult aviso = MessageBox.Show("¿Esta seguro que desea salir?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (aviso == DialogResult.Yes)
-            {
-                this.Close();
-            }
+            this.Close();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

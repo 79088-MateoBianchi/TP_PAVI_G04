@@ -105,7 +105,7 @@ namespace Inmobiliaria
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            DialogResult aviso = MessageBox.Show("¿Esta seguro que desea salir?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult aviso = MessageBox.Show("¿Esta seguro que desea cancelar la carga de datos?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (aviso == DialogResult.Yes)
             {
                 this.Close();
@@ -126,7 +126,7 @@ namespace Inmobiliaria
 
                 if (resultado)
                 {
-                    MessageBox.Show("Propiedad agredada correctamente!");
+                    MessageBox.Show("Propiedad agredada correctamente!", "Informacion");
                     LimpiarCampos();
                     CargarComboBarrios();
                     CargarComboMonedas();
