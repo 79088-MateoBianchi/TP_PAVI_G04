@@ -55,17 +55,29 @@
     <Compile Include="AccesoADatos\AD_TiposPropiedades.cs" />
     <Compile Include="Entidades\Empleados.cs" />
     <Compile Include="Entidades\Propiedad.cs" />
-    <Compile Include="frmABMPropiedades.cs">
+    <Compile Include="frmAltaPropiedades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmABMPropiedades.Designer.cs">
-      <DependentUpon>frmABMPropiedades.cs</DependentUpon>
+    <Compile Include="frmAltaPropiedades.Designer.cs">
+      <DependentUpon>frmAltaPropiedades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiltroPropiedades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltroPropiedades.Designer.cs">
+      <DependentUpon>frmFiltroPropiedades.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarEliminarPropiedad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarEliminarPropiedad.Designer.cs">
+      <DependentUpon>frmModificarEliminarPropiedad.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -75,11 +87,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmABMPropiedades.resx">
-      <DependentUpon>frmABMPropiedades.cs</DependentUpon>
+    <EmbeddedResource Include="frmAltaPropiedades.resx">
+      <DependentUpon>frmAltaPropiedades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltroPropiedades.resx">
+      <DependentUpon>frmFiltroPropiedades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarEliminarPropiedad.resx">
+      <DependentUpon>frmModificarEliminarPropiedad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
@@ -92,6 +110,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -105,6 +124,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_2_2739118.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_trash-bin-garbage-delete-rubbish-waste_3643729.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_compose_1055085.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_add1-_32378.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_floppy_285657.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Cancel_728918.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

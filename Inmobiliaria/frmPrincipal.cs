@@ -19,7 +19,7 @@ namespace Inmobiliaria
 
         private void registrarEliminarPropiedadesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmABMPropiedades ventana = new frmABMPropiedades();
+            frmFiltroPropiedades ventana = new frmFiltroPropiedades();
             ventana.ShowDialog();
         }
     }
