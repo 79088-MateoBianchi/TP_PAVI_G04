@@ -9,9 +9,10 @@ using System.Threading.Tasks;
 
 namespace Inmobiliaria.AccesoADatos
 {
-    public class AD_Propiedades
+    public class AD_Escribanos
     {
-        public static DataTable ObtenerPropiedades()
+
+        public static DataTable ObtenerEscribanos()
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -20,7 +21,7 @@ namespace Inmobiliaria.AccesoADatos
             {
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "GetPropiedades";
+                string consulta = "GetEscribanos";
 
                 cmd.Parameters.Clear();
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -48,7 +49,44 @@ namespace Inmobiliaria.AccesoADatos
 
             }
         }
-        public static bool AgregarPropiedad(Propiedad prop)
+        public static DataTable ObtenerEscribanosPorMatricula(int matricula)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "GetEscribanoPorMatricula";
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@matricula", matricula);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = consulta;
+
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+        public static bool AgregarEscribano(Escribano escribano)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -56,18 +94,11 @@ namespace Inmobiliaria.AccesoADatos
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "InsertPropiedad";
+                string consulta = "InsertEscribano";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@designacionCatastral", prop.DesignacionCatastralPropiedad);
-                cmd.Parameters.AddWithValue("@calle", prop.CallePropiedad);
-                cmd.Parameters.AddWithValue("@nroCalle", prop.NroCallePropiedad);
-                cmd.Parameters.AddWithValue("@idBarrio", prop.IdBarrioPropiedad);
-                cmd.Parameters.AddWithValue("@piso", prop.PisoPropiedad);
-                cmd.Parameters.AddWithValue("@depto", prop.DepartamentoPropiedad);
-                cmd.Parameters.AddWithValue("@idTipoProp", prop.IdTipoPropPropiedad);
-                cmd.Parameters.AddWithValue("@monto", prop.MontoPropiedad);
-                cmd.Parameters.AddWithValue("@idMoneda", prop.IdMonedaPropiedad);
-                cmd.Parameters.AddWithValue("@idTipoOperacion", prop.IdTipoOperacionPropiedad);
+                cmd.Parameters.AddWithValue("@matricula", escribano.MatriculaEscribano);
+                cmd.Parameters.AddWithValue("@nombre", escribano.NombreEscribano);
+                cmd.Parameters.AddWithValue("@apellido", escribano.ApellidoEscribano);
 
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = consulta;
@@ -79,7 +110,6 @@ namespace Inmobiliaria.AccesoADatos
             }
             catch (Exception)
             {
-
                 throw;
             }
             finally
@@ -89,18 +119,17 @@ namespace Inmobiliaria.AccesoADatos
 
             return resultado;
         }
-
-        public static Propiedad ObtenerPropiedadPorDesigCatastral(int desigCatastral)
+        public static Escribano ObtenerObjEscribanosPorMatricula(int matricula)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
-            Propiedad p = new Propiedad();
+            Escribano escrib = new Escribano();
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "GetPropPorDesigCatastral";
+                string consulta = "GetEscribanoPorMatricula";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@desigCatastral", desigCatastral);
+                cmd.Parameters.AddWithValue("@matricula", matricula);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = consulta;
 
@@ -112,16 +141,9 @@ namespace Inmobiliaria.AccesoADatos
 
                 if (dr != null && dr.Read())
                 {
-                    p.DesignacionCatastralPropiedad = int.Parse(dr["designacion_catastral"].ToString());
-                    p.CallePropiedad = dr["calle"].ToString();
-                    p.NroCallePropiedad = int.Parse(dr["nro_calle"].ToString());
-                    p.IdBarrioPropiedad = int.Parse(dr["id_barrio"].ToString());
-                    p.PisoPropiedad = int.Parse(dr["piso"].ToString());
-                    p.DepartamentoPropiedad = dr["departamento"].ToString();
-                    p.IdTipoPropPropiedad = int.Parse(dr["id_tipo_propiedad"].ToString());
-                    p.MontoPropiedad = int.Parse(dr["monto"].ToString());
-                    p.IdMonedaPropiedad = int.Parse(dr["id_moneda"].ToString());
-                    p.IdTipoOperacionPropiedad = int.Parse(dr["id_tipo_operacion"].ToString());
+                    escrib.MatriculaEscribano = int.Parse(dr["matricula"].ToString());
+                    escrib.NombreEscribano = dr["n_escribano"].ToString();
+                    escrib.ApellidoEscribano = dr["apellido_escribano"].ToString();
                 }
             }
             catch (Exception)
@@ -134,11 +156,9 @@ namespace Inmobiliaria.AccesoADatos
                 cn.Close();
             }
 
-
-
-            return p;
+            return escrib;
         }
-        public static bool ActualizarPropiedad(Propiedad p)
+        public static bool ActualizarEscribano(Escribano escrib)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -147,51 +167,11 @@ namespace Inmobiliaria.AccesoADatos
             {
 
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "UpdatePropiedad";
+                string consulta = "UpdateEscribano";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@desigCatastral", p.DesignacionCatastralPropiedad);
-                cmd.Parameters.AddWithValue("@calle", p.CallePropiedad);
-                cmd.Parameters.AddWithValue("@nroCalle", p.NroCallePropiedad);
-                cmd.Parameters.AddWithValue("@piso", p.PisoPropiedad);
-                cmd.Parameters.AddWithValue("@depto", p.DepartamentoPropiedad);
-                cmd.Parameters.AddWithValue("@idBarrio", p.IdBarrioPropiedad);
-                cmd.Parameters.AddWithValue("@idTipoProp", p.IdTipoPropPropiedad);
-                cmd.Parameters.AddWithValue("@idTipoOperacion", p.IdTipoOperacionPropiedad);
-                cmd.Parameters.AddWithValue("@monto", p.MontoPropiedad);
-                cmd.Parameters.AddWithValue("@moneda", p.IdMonedaPropiedad);
-
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = consulta;
-
-                cn.Open();
-                cmd.Connection = cn;
-                cmd.ExecuteNonQuery();
-                resultado = true;
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            finally
-            {
-                cn.Close();
-            }
-            return resultado;
-        }
-        public static bool EliminarPropiedad(Propiedad p)
-        {
-            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
-            SqlConnection cn = new SqlConnection(cadenaConexion);
-            bool resultado = false;
-            try
-            {
-
-                SqlCommand cmd = new SqlCommand();
-                string consulta = "DeletePropiedad";
-                cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@desigCatastral", p.DesignacionCatastralPropiedad);
-
+                cmd.Parameters.AddWithValue("@matricula", escrib.MatriculaEscribano);
+                cmd.Parameters.AddWithValue("@nombre", escrib.NombreEscribano);
+                cmd.Parameters.AddWithValue("@apellido", escrib.ApellidoEscribano);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = consulta;
 
@@ -212,45 +192,39 @@ namespace Inmobiliaria.AccesoADatos
             return resultado;
         }
 
-        public static DataTable GetPropiedadesPorDesigCatastral(int designacionCatastral)
+        public static bool EliminarEscribano(Escribano escrib)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
-
+            bool resultado = false;
             try
             {
+
                 SqlCommand cmd = new SqlCommand();
-
-                string consulta = "GetPropPorDesigCatastral";
-
+                string consulta = "DeleteEscribano";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@desigCatastral", designacionCatastral);
+                cmd.Parameters.AddWithValue("@matricula", escrib.MatriculaEscribano);
+
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = consulta;
 
-
                 cn.Open();
                 cmd.Connection = cn;
-
-                DataTable tabla = new DataTable();
-
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(tabla);
-
-                return tabla;
-
+                cmd.ExecuteNonQuery();
+                resultado = true;
             }
             catch (Exception)
             {
+
                 throw;
             }
             finally
             {
                 cn.Close();
-
             }
+            return resultado;
         }
-        public static bool ExistePropiedad(int desigCat)
+        public static bool ExisteEscribano(int matricula)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -259,9 +233,9 @@ namespace Inmobiliaria.AccesoADatos
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "GetPropPorDesigCatastral";
+                string consulta = "GetEscribanoPorMatricula";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@desigCatastral", desigCat);
+                cmd.Parameters.AddWithValue("@matricula", matricula);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = consulta;
 

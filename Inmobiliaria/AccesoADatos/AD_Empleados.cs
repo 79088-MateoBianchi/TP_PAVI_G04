@@ -45,7 +45,7 @@ namespace Inmobiliaria.AccesoADatos
 
                 return resultado;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }

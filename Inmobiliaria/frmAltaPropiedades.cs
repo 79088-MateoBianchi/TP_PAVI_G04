@@ -114,28 +114,37 @@ namespace Inmobiliaria
 
         private void btnGuardarPropiedad_Click(object sender, EventArgs e)
         {
-            if (txtDesignacionCatastral.Text.Equals("") || txtCalle.Text.Equals("") || txtNroCalle.Text.Equals("") || cmbBarrio.SelectedIndex.Equals(-1) || cmbMoneda.SelectedIndex.Equals(-1) || cmbTipoOperacion.SelectedIndex.Equals(-1) || cmbTipoPropiedad.SelectedIndex.Equals(-1) || txtMonto.Text.Equals("") || txtPiso.Text.Equals(""))
+            bool existe = AD_Propiedades.ExistePropiedad(int.Parse(txtDesignacionCatastral.Text));
+            if (existe)
             {
-                DialogResult mensaje = MessageBox.Show("Ingrese todos los campos necesarios!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("La propiedad ingresada ya esta en el sistema!", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txtDesignacionCatastral.Focus();
             }
             else
             {
-                Propiedad p = ObtenerDatosPropiedad();
-                bool resultado = AD_Propiedades.AgregarPropiedad(p);
-
-                if (resultado)
+                if (txtDesignacionCatastral.Text.Equals("") || txtCalle.Text.Equals("") || txtNroCalle.Text.Equals("") || cmbBarrio.SelectedIndex.Equals(-1) || cmbMoneda.SelectedIndex.Equals(-1) || cmbTipoOperacion.SelectedIndex.Equals(-1) || cmbTipoPropiedad.SelectedIndex.Equals(-1) || txtMonto.Text.Equals("") || txtPiso.Text.Equals(""))
                 {
-                    MessageBox.Show("Propiedad agredada correctamente!", "Informacion");
-                    LimpiarCampos();
-                    CargarComboBarrios();
-                    CargarComboMonedas();
-                    CargarComboTiposOperaciones();
-                    CargarComboTiposPropiedades();
+                    DialogResult mensaje = MessageBox.Show("Ingrese todos los campos necesarios!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtDesignacionCatastral.Focus();
                 }
                 else
                 {
-                    MessageBox.Show("Error al insertar la propiedad!");
+                    Propiedad p = ObtenerDatosPropiedad();
+                    bool resultado = AD_Propiedades.AgregarPropiedad(p);
+
+                    if (resultado)
+                    {
+                        MessageBox.Show("Propiedad agredada correctamente!", "Informacion");
+                        LimpiarCampos();
+                        CargarComboBarrios();
+                        CargarComboMonedas();
+                        CargarComboTiposOperaciones();
+                        CargarComboTiposPropiedades();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al insertar la propiedad!");
+                    }
                 }
             }
         }

@@ -22,5 +22,11 @@ namespace Inmobiliaria
             frmFiltroPropiedades ventana = new frmFiltroPropiedades();
             ventana.ShowDialog();
         }
+
+        private void aBMEscribanosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFiltroEscribanos ventana = new frmFiltroEscribanos();
+            ventana.ShowDialog();
+        }
     }
 }

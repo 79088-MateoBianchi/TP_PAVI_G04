@@ -39,6 +39,8 @@ namespace Inmobiliaria
             this.modificarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.propiedadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarEliminarPropiedadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.escribanosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMEscribanosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vistasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,6 +67,7 @@ namespace Inmobiliaria
             this.empleadosToolStripMenuItem,
             this.clientesToolStripMenuItem,
             this.propiedadesToolStripMenuItem,
+            this.escribanosToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
@@ -124,9 +127,25 @@ namespace Inmobiliaria
             // 
             this.registrarEliminarPropiedadesToolStripMenuItem.Image = global::Inmobiliaria.Properties.Resources.iconfinder_house_299061;
             this.registrarEliminarPropiedadesToolStripMenuItem.Name = "registrarEliminarPropiedadesToolStripMenuItem";
-            this.registrarEliminarPropiedadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarEliminarPropiedadesToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.registrarEliminarPropiedadesToolStripMenuItem.Text = "ABM Propiedades";
             this.registrarEliminarPropiedadesToolStripMenuItem.Click += new System.EventHandler(this.registrarEliminarPropiedadesToolStripMenuItem_Click);
+            // 
+            // escribanosToolStripMenuItem
+            // 
+            this.escribanosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aBMEscribanosToolStripMenuItem});
+            this.escribanosToolStripMenuItem.Name = "escribanosToolStripMenuItem";
+            this.escribanosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.escribanosToolStripMenuItem.Text = "Escribanos";
+            // 
+            // aBMEscribanosToolStripMenuItem
+            // 
+            this.aBMEscribanosToolStripMenuItem.Image = global::Inmobiliaria.Properties.Resources.iconfinder_person_2_1376032;
+            this.aBMEscribanosToolStripMenuItem.Name = "aBMEscribanosToolStripMenuItem";
+            this.aBMEscribanosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aBMEscribanosToolStripMenuItem.Text = "ABM Escribanos";
+            this.aBMEscribanosToolStripMenuItem.Click += new System.EventHandler(this.aBMEscribanosToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -185,5 +204,7 @@ namespace Inmobiliaria
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vistasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem escribanosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aBMEscribanosToolStripMenuItem;
     }
 }
