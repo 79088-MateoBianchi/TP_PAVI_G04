@@ -143,7 +143,7 @@ namespace Inmobiliaria
             // 
             this.aBMEscribanosToolStripMenuItem.Image = global::Inmobiliaria.Properties.Resources.iconfinder_person_2_1376032;
             this.aBMEscribanosToolStripMenuItem.Name = "aBMEscribanosToolStripMenuItem";
-            this.aBMEscribanosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aBMEscribanosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.aBMEscribanosToolStripMenuItem.Text = "ABM Escribanos";
             this.aBMEscribanosToolStripMenuItem.Click += new System.EventHandler(this.aBMEscribanosToolStripMenuItem_Click);
             // 
@@ -152,6 +152,7 @@ namespace Inmobiliaria
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // editarToolStripMenuItem
             // 
