@@ -12,7 +12,7 @@ namespace Inmobiliaria.Entidades
         int tipo_documento_c;
         string n_cliente;
         string apellido_cliente;
-        int tel_client;
+        string tel_client;
         string calle;
         int nro_calle;
         int id_barrio;
@@ -41,7 +41,7 @@ namespace Inmobiliaria.Entidades
             set => apellido_cliente = value;
         }
 
-        public int TelefonoCliente
+        public string TelefonoCliente
         {
             get => tel_client;
             set => tel_client = value;

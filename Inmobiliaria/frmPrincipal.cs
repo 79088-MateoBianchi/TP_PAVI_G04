@@ -16,5 +16,12 @@ namespace Inmobiliaria
         {
             InitializeComponent();
         }
+
+        private void registrarEliminarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaBajaCliente ventana = new AltaBajaCliente();
+            ventana.Show();
+            this.Hide();
+        }
     }
 }

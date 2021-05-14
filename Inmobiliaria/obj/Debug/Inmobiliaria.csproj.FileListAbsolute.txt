@@ -35,3 +35,7 @@ C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria
 C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.exe
 C:\Users\SANTI\Desktop\TP PAV PA\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.pdb
 >>>>>>> 5e0c5621ed21a9e9cc796de772449f5eb99bffbd
+C:\Users\tisse\Source\Repos\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.AltaEdificio.resources
+C:\Users\tisse\Source\Repos\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.AltaBajaCliente.resources
+C:\Users\tisse\Source\Repos\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.NuevoCliente.resources
+C:\Users\tisse\Source\Repos\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.ModificarCliente.resources

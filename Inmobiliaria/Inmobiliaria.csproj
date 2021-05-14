@@ -50,6 +50,12 @@
     <Compile Include="AccesoADatos\AD_Edificios.cs" />
     <Compile Include="AccesoADatos\AD_Clientes.cs" />
     <Compile Include="AccesoADatos\AD_Empleados.cs" />
+    <Compile Include="AltaBajaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaBajaCliente.Designer.cs">
+      <DependentUpon>AltaBajaCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="AltaEdificio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,8 +77,23 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarCliente.Designer.cs">
+      <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoCliente.Designer.cs">
+      <DependentUpon>NuevoCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AltaBajaCliente.resx">
+      <DependentUpon>AltaBajaCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AltaEdificio.resx">
       <DependentUpon>AltaEdificio.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +102,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarCliente.resx">
+      <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoCliente.resx">
+      <DependentUpon>NuevoCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

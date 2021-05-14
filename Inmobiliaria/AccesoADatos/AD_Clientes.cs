@@ -51,7 +51,7 @@ namespace Inmobiliaria.AccesoADatos
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "INSERT INTO clientes(nro_documento_c, tipo_documento_c, n_cliente, apellido_cliente, tel_cliente, calle, nro_calle, id_barrio) VALUES (@documentoCliente, @tipoDocumento, @nombreCliente,@apellidoCliente,@telefonoCliente @Calle, @numeroCalle, @idBarrio)";
+                string consulta = "INSERT INTO clientes(nro_documento_c, tipo_documento_c, n_cliente, apellido_cliente, tel_cliente, calle, nro_calle, id_barrio) VALUES (@documentoCliente, @tipoDocumento, @nombreCliente,@apellidoCliente,@telefonoCliente, @Calle, @numeroCalle, @idBarrio)";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@documentoCliente", cl.DocumentoCliente);
                 cmd.Parameters.AddWithValue("@tipoDocumento", cl.TipoDocumentoCliente);
@@ -90,7 +90,7 @@ namespace Inmobiliaria.AccesoADatos
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT * FROM clietes where nro_documento_c like @documentoCliente";
+                string consulta = "SELECT * FROM clientes where nro_documento_c like @documentoCliente";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@documentoCliente", documento);
 
@@ -106,7 +106,7 @@ namespace Inmobiliaria.AccesoADatos
                     cl.TipoDocumentoCliente = int.Parse(dr["tipo_documento_c"].ToString());
                     cl.NombreCliente = dr["n_cliente"].ToString();
                     cl.ApellidoCliente = dr["apellido_cliente"].ToString();
-                    cl.TelefonoCliente = int.Parse(dr["tel_cliente"].ToString());
+                    cl.TelefonoCliente = dr["tel_cliente"].ToString();
 
                     cl.CalleCliente = dr["calle"].ToString();
                     cl.NroCasaCliente = int.Parse(dr["nro_calle"].ToString());
