@@ -48,7 +48,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoADatos\AD_Empleados.cs" />
+    <Compile Include="AccesoADatos\AD_Varios.cs" />
     <Compile Include="Entidades\Empleados.cs" />
+    <Compile Include="formularios\frmAltaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmAltaEmpleado.Designer.cs">
+      <DependentUpon>frmAltaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frmModificarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmModificarEmpleado.Designer.cs">
+      <DependentUpon>frmModificarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_ABM_empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_ABM_empleados.Designer.cs">
+      <DependentUpon>frm_ABM_empleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +82,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formularios\frmAltaEmpleado.resx">
+      <DependentUpon>frmAltaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmModificarEmpleado.resx">
+      <DependentUpon>frmModificarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_ABM_empleados.resx">
+      <DependentUpon>frm_ABM_empleados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,6 +105,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -90,6 +119,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_gnome-app-install_29240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_add1-_32378.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Button Add_58476.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_floppy_285657.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_floppy_2856571.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Cancel_728918.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_add1-_323781.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_compose_1055085.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_trash-bin-garbage-delete-rubbish-waste_3643729.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_2_2739118.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_reload_46828.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_trash-bin-garbage-delete-rubbish-waste_36437291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_trash-bin-garbage-delete-rubbish-waste_36437292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Magnifier_728952.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_binoculars_43572.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_eccomerce_-_search_3440910.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blog-AUCAL-2020-03-20T140827.967-820x410.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casa_inmobiliaria.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
