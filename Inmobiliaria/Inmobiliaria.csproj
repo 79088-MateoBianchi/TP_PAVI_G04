@@ -47,13 +47,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccesoADatos\AD_Departamentos.cs" />
     <Compile Include="AccesoADatos\AD_Empleados.cs" />
+    <Compile Include="Entidades\Departamento.cs" />
     <Compile Include="Entidades\Empleados.cs" />
+    <Compile Include="frmAltaDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaDepartamento.Designer.cs">
+      <DependentUpon>frmAltaDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiltroDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltroDepartamentos.Designer.cs">
+      <DependentUpon>frmFiltroDepartamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarEliminarDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarEliminarDepartamento.Designer.cs">
+      <DependentUpon>frmModificarEliminarDepartamento.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -63,25 +83,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAltaDepartamento.resx">
+      <DependentUpon>frmAltaDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltroDepartamentos.resx">
+      <DependentUpon>frmFiltroDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarEliminarDepartamento.resx">
+      <DependentUpon>frmModificarEliminarDepartamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -90,6 +120,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos1\ABM_Departamentos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos1\iconfinder_Building_3870065.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos1\ABM_Departamentos.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos1\iconfinder_add1-_32378.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos1\iconfinder_reload_46828.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos1\iconfinder_2_2739118.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos1\iconfinder_Cancel_728918.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos1\iconfinder_trash-bin-garbage-delete-rubbish-waste_3643729.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos1\iconfinder_compose_1055085.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

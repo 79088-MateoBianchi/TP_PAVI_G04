@@ -16,5 +16,11 @@ namespace Inmobiliaria
         {
             InitializeComponent();
         }
+
+        private void ABMDepartamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFiltroDepartamentos ventana = new frmFiltroDepartamentos();
+            ventana.ShowDialog();
+        }
     }
 }
