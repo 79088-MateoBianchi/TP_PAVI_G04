@@ -47,10 +47,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccesoADatos\AD_Barrios.cs" />
     <Compile Include="AccesoADatos\AD_Departamentos.cs" />
     <Compile Include="AccesoADatos\AD_Empleados.cs" />
+    <Compile Include="AccesoADatos\AD_Escribanos.cs" />
+    <Compile Include="AccesoADatos\AD_Monedas.cs" />
+    <Compile Include="AccesoADatos\AD_Propiedades.cs" />
+    <Compile Include="AccesoADatos\AD_TiposOperaciones.cs" />
+    <Compile Include="AccesoADatos\AD_TiposPropiedades.cs" />
     <Compile Include="Entidades\Departamento.cs" />
     <Compile Include="Entidades\Empleados.cs" />
+    <Compile Include="Entidades\Escribano.cs" />
+    <Compile Include="Entidades\Propiedad.cs" />
+    <Compile Include="Formularios\frmAltaEscribanos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAltaEscribanos.Designer.cs">
+      <DependentUpon>frmAltaEscribanos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAltaPropiedades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAltaPropiedades.Designer.cs">
+      <DependentUpon>frmAltaPropiedades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroEscribanos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroEscribanos.Designer.cs">
+      <DependentUpon>frmFiltroEscribanos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroPropiedades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroPropiedades.Designer.cs">
+      <DependentUpon>frmFiltroPropiedades.cs</DependentUpon>
+    </Compile>
+    
     <Compile Include="Formularios\frmAltaDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,8 +100,22 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmLogin.Designer.cs">
+
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmModificarEliminarEscribano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmModificarEliminarEscribano.Designer.cs">
+      <DependentUpon>frmModificarEliminarEscribano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmModificarEliminarPropiedad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmModificarEliminarPropiedad.Designer.cs">
+      <DependentUpon>frmModificarEliminarPropiedad.cs</DependentUpon>
+    </Compile>
+    
     <Compile Include="Formularios\frmModificarEliminarDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +130,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\frmAltaEscribanos.resx">
+      <DependentUpon>frmAltaEscribanos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAltaPropiedades.resx">
+      <DependentUpon>frmAltaPropiedades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmFiltroEscribanos.resx">
+      <DependentUpon>frmFiltroEscribanos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmFiltroPropiedades.resx">
+      <DependentUpon>frmFiltroPropiedades.cs</DependentUpon>
+    </EmbeddedResource>
+    
     <EmbeddedResource Include="Formularios\frmAltaDepartamento.resx">
       <DependentUpon>frmAltaDepartamento.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +152,13 @@
     <EmbeddedResource Include="Formularios\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmModificarEliminarEscribano.resx">
+      <DependentUpon>frmModificarEliminarEscribano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmModificarEliminarPropiedad.resx">
+      <DependentUpon>frmModificarEliminarPropiedad.cs</DependentUpon>
+    </EmbeddedResource>
+    
     <EmbeddedResource Include="Formularios\frmModificarEliminarDepartamento.resx">
       <DependentUpon>frmModificarEliminarDepartamento.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,8 +176,8 @@
     </None>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
