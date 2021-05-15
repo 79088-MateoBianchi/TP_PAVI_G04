@@ -148,5 +148,8 @@
   <ItemGroup>
     <None Include="Resources\Iconos1\iconfinder_compose_1055085.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos1\iconfinder_floppy_285657.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
