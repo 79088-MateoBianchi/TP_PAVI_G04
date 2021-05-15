@@ -51,51 +51,51 @@
     <Compile Include="AccesoADatos\AD_Empleados.cs" />
     <Compile Include="Entidades\Departamento.cs" />
     <Compile Include="Entidades\Empleados.cs" />
-    <Compile Include="frmAltaDepartamento.cs">
+    <Compile Include="Formularios\frmAltaDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAltaDepartamento.Designer.cs">
+    <Compile Include="Formularios\frmAltaDepartamento.Designer.cs">
       <DependentUpon>frmAltaDepartamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmFiltroDepartamentos.cs">
+    <Compile Include="Formularios\frmFiltroDepartamentos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmFiltroDepartamentos.Designer.cs">
+    <Compile Include="Formularios\frmFiltroDepartamentos.Designer.cs">
       <DependentUpon>frmFiltroDepartamentos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="Formularios\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
+    <Compile Include="Formularios\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmModificarEliminarDepartamento.cs">
+    <Compile Include="Formularios\frmModificarEliminarDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmModificarEliminarDepartamento.Designer.cs">
+    <Compile Include="Formularios\frmModificarEliminarDepartamento.Designer.cs">
       <DependentUpon>frmModificarEliminarDepartamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPrincipal.cs">
+    <Compile Include="Formularios\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPrincipal.Designer.cs">
+    <Compile Include="Formularios\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAltaDepartamento.resx">
+    <EmbeddedResource Include="Formularios\frmAltaDepartamento.resx">
       <DependentUpon>frmAltaDepartamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFiltroDepartamentos.resx">
+    <EmbeddedResource Include="Formularios\frmFiltroDepartamentos.resx">
       <DependentUpon>frmFiltroDepartamentos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
+    <EmbeddedResource Include="Formularios\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmModificarEliminarDepartamento.resx">
+    <EmbeddedResource Include="Formularios\frmModificarEliminarDepartamento.resx">
       <DependentUpon>frmModificarEliminarDepartamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal.resx">
+    <EmbeddedResource Include="Formularios\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -151,5 +151,6 @@
   <ItemGroup>
     <None Include="Resources\Iconos1\iconfinder_floppy_285657.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
