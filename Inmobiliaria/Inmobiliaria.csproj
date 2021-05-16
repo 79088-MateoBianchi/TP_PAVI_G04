@@ -59,6 +59,12 @@
     <Compile Include="Entidades\Empleados.cs" />
     <Compile Include="Entidades\Escribano.cs" />
     <Compile Include="Entidades\Propiedad.cs" />
+    <Compile Include="Formularios\frmAltaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAltaEmpleado.Designer.cs">
+      <DependentUpon>frmAltaEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmAltaEscribanos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     </Compile>
     <Compile Include="Formularios\frmAltaPropiedades.Designer.cs">
       <DependentUpon>frmAltaPropiedades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroEmpleados.Designer.cs">
+      <DependentUpon>frmFiltroEmpleados.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmFiltroEscribanos.cs">
       <SubType>Form</SubType>
@@ -83,7 +95,6 @@
     <Compile Include="Formularios\frmFiltroPropiedades.Designer.cs">
       <DependentUpon>frmFiltroPropiedades.cs</DependentUpon>
     </Compile>
-    
     <Compile Include="Formularios\frmAltaDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,7 +111,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmLogin.Designer.cs">
-
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmModificarEliminarEscribano.cs">
@@ -115,12 +125,17 @@
     <Compile Include="Formularios\frmModificarEliminarPropiedad.Designer.cs">
       <DependentUpon>frmModificarEliminarPropiedad.cs</DependentUpon>
     </Compile>
-    
     <Compile Include="Formularios\frmModificarEliminarDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmModificarEliminarDepartamento.Designer.cs">
       <DependentUpon>frmModificarEliminarDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmModificarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmModificarEmpleado.Designer.cs">
+      <DependentUpon>frmModificarEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -130,11 +145,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\frmAltaEmpleado.resx">
+      <DependentUpon>frmAltaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmAltaEscribanos.resx">
       <DependentUpon>frmAltaEscribanos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmAltaPropiedades.resx">
       <DependentUpon>frmAltaPropiedades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmFiltroEmpleados.resx">
+      <DependentUpon>frmFiltroEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmFiltroEscribanos.resx">
       <DependentUpon>frmFiltroEscribanos.cs</DependentUpon>
@@ -142,7 +163,6 @@
     <EmbeddedResource Include="Formularios\frmFiltroPropiedades.resx">
       <DependentUpon>frmFiltroPropiedades.cs</DependentUpon>
     </EmbeddedResource>
-    
     <EmbeddedResource Include="Formularios\frmAltaDepartamento.resx">
       <DependentUpon>frmAltaDepartamento.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,9 +178,11 @@
     <EmbeddedResource Include="Formularios\frmModificarEliminarPropiedad.resx">
       <DependentUpon>frmModificarEliminarPropiedad.cs</DependentUpon>
     </EmbeddedResource>
-    
     <EmbeddedResource Include="Formularios\frmModificarEliminarDepartamento.resx">
       <DependentUpon>frmModificarEliminarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmModificarEmpleado.resx">
+      <DependentUpon>frmModificarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
@@ -218,6 +240,11 @@
   <ItemGroup>
     <None Include="Resources\Iconos1\iconfinder_floppy_285657.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casa_inmobiliaria.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

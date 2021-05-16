@@ -18,6 +18,11 @@ namespace Inmobiliaria
         private string NombreUsuario;
         private string Contraseña;
 
+        public Empleados()
+        {
+
+        }
+
         public int LegajoEmpleado { get => Legajo; set => Legajo = value; }
         public string NombreEmpleado { get => Nombre; set => Nombre = value; }
         public string ApellidoEmpleado { get => Apellido; set => Apellido = value; }

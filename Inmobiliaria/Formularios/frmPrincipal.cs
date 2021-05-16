@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Inmobiliaria.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace Inmobiliaria
         public frmPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void aBMEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_ABM_empleados ventana = new frm_ABM_empleados();
+            ventana.ShowDialog();
         }
 
         private void ABMDepartamentosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,5 +47,6 @@ namespace Inmobiliaria
         {
             Application.Exit();
         }
+
     }
 }
