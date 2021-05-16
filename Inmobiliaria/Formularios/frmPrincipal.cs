@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Inmobiliaria.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,6 +40,12 @@ namespace Inmobiliaria
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void aBMProvinciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFiltroProvincias ventana = new frmFiltroProvincias();
+            ventana.ShowDialog();
         }
     }
 }

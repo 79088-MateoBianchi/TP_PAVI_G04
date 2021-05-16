@@ -43,10 +43,12 @@ namespace Inmobiliaria
             this.aBMEscribanosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.departamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ABMDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vistasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.provinciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMProvinciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +73,7 @@ namespace Inmobiliaria
             this.propiedadesToolStripMenuItem,
             this.escribanosToolStripMenuItem,
             this.departamentosToolStripMenuItem,
+            this.provinciasToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
@@ -164,6 +167,13 @@ namespace Inmobiliaria
             this.ABMDepartamentosToolStripMenuItem.Text = "ABM Departamentos";
             this.ABMDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.ABMDepartamentosToolStripMenuItem_Click);
             // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
@@ -182,12 +192,20 @@ namespace Inmobiliaria
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
-            // salirToolStripMenuItem
+            // provinciasToolStripMenuItem
             // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            this.provinciasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aBMProvinciasToolStripMenuItem});
+            this.provinciasToolStripMenuItem.Name = "provinciasToolStripMenuItem";
+            this.provinciasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.provinciasToolStripMenuItem.Text = "Provincias";
+            // 
+            // aBMProvinciasToolStripMenuItem
+            // 
+            this.aBMProvinciasToolStripMenuItem.Name = "aBMProvinciasToolStripMenuItem";
+            this.aBMProvinciasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aBMProvinciasToolStripMenuItem.Text = "ABM Provincias";
+            this.aBMProvinciasToolStripMenuItem.Click += new System.EventHandler(this.aBMProvinciasToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -227,5 +245,7 @@ namespace Inmobiliaria
         
         private System.Windows.Forms.ToolStripMenuItem ABMDepartamentosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem provinciasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aBMProvinciasToolStripMenuItem;
     }
 }

@@ -23,3 +23,12 @@ D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.pd
 D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.frmFiltroDepartamentos.resources
 D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.frmModificarEliminarDepartamento.resources
 D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.frmAltaDepartamento.resources
+D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.frmAltaEscribanos.resources
+D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.frmAltaPropiedades.resources
+D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.frmFiltroEscribanos.resources
+D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.frmFiltroPropiedades.resources
+D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.frmModificarEliminarEscribano.resources
+D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.frmModificarEliminarPropiedad.resources
+D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.Formularios.frmFiltroProvincias.resources
+D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.Formularios.frmAltaProvincia.resources
+D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.Formularios.frmEliminarProvincia.resources
