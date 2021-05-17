@@ -51,6 +51,7 @@
     <Compile Include="AccesoADatos\AD_Departamentos.cs" />
     <Compile Include="AccesoADatos\AD_Empleados.cs" />
     <Compile Include="AccesoADatos\AD_Escribanos.cs" />
+    <Compile Include="AccesoADatos\AD_Localidades.cs" />
     <Compile Include="AccesoADatos\AD_Monedas.cs" />
     <Compile Include="AccesoADatos\AD_Propiedades.cs" />
     <Compile Include="AccesoADatos\AD_TiposOperaciones.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="Entidades\Empleados.cs" />
     <Compile Include="Entidades\Escribano.cs" />
     <Compile Include="Entidades\Moneda.cs" />
+    <Compile Include="Entidades\Localidades.cs" />
     <Compile Include="Entidades\Propiedad.cs" />
     <Compile Include="Formularios\frmAltaEmpleado.cs">
       <SubType>Form</SubType>
@@ -77,6 +79,12 @@
     </Compile>
     <Compile Include="Formularios\frmAltaMoneda.Designer.cs">
       <DependentUpon>frmAltaMoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAltaLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAltaLocalidad.Designer.cs">
+      <DependentUpon>frmAltaLocalidad.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmAltaPropiedades.cs">
       <SubType>Form</SubType>
@@ -101,6 +109,12 @@
     </Compile>
     <Compile Include="Formularios\frmFiltroMoneda.Designer.cs">
       <DependentUpon>frmFiltroMoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroLocalidades.Designer.cs">
+      <DependentUpon>frmFiltroLocalidades.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmFiltroPropiedades.cs">
       <SubType>Form</SubType>
@@ -156,6 +170,12 @@
     <Compile Include="Formularios\frmModificarEmpleado.Designer.cs">
       <DependentUpon>frmModificarEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmModificarLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmModificarLocalidad.Designer.cs">
+      <DependentUpon>frmModificarLocalidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmAltaMoneda.resx">
       <DependentUpon>frmAltaMoneda.cs</DependentUpon>
+    </EmbeddedResource>  
+    <EmbeddedResource Include="Formularios\frmAltaLocalidad.resx">
+      <DependentUpon>frmAltaLocalidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmAltaPropiedades.resx">
       <DependentUpon>frmAltaPropiedades.cs</DependentUpon>
@@ -184,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmFiltroMoneda.resx">
       <DependentUpon>frmFiltroMoneda.cs</DependentUpon>
+    </EmbeddedResource>  
+    <EmbeddedResource Include="Formularios\frmFiltroLocalidades.resx">
+      <DependentUpon>frmFiltroLocalidades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmFiltroPropiedades.resx">
       <DependentUpon>frmFiltroPropiedades.cs</DependentUpon>
@@ -211,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmModificarEmpleado.resx">
       <DependentUpon>frmModificarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmModificarLocalidad.resx">
+      <DependentUpon>frmModificarLocalidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
@@ -273,6 +302,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\casa_inmobiliaria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_user-group_285648.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
