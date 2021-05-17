@@ -58,6 +58,7 @@
     <Compile Include="Entidades\Departamento.cs" />
     <Compile Include="Entidades\Empleados.cs" />
     <Compile Include="Entidades\Escribano.cs" />
+    <Compile Include="Entidades\Moneda.cs" />
     <Compile Include="Entidades\Propiedad.cs" />
     <Compile Include="Formularios\frmAltaEmpleado.cs">
       <SubType>Form</SubType>
@@ -70,6 +71,12 @@
     </Compile>
     <Compile Include="Formularios\frmAltaEscribanos.Designer.cs">
       <DependentUpon>frmAltaEscribanos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAltaMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAltaMoneda.Designer.cs">
+      <DependentUpon>frmAltaMoneda.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmAltaPropiedades.cs">
       <SubType>Form</SubType>
@@ -88,6 +95,12 @@
     </Compile>
     <Compile Include="Formularios\frmFiltroEscribanos.Designer.cs">
       <DependentUpon>frmFiltroEscribanos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroMoneda.Designer.cs">
+      <DependentUpon>frmFiltroMoneda.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmFiltroPropiedades.cs">
       <SubType>Form</SubType>
@@ -118,6 +131,12 @@
     </Compile>
     <Compile Include="Formularios\frmModificarEliminarEscribano.Designer.cs">
       <DependentUpon>frmModificarEliminarEscribano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmModificarEliminarMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmModificarEliminarMoneda.Designer.cs">
+      <DependentUpon>frmModificarEliminarMoneda.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmModificarEliminarPropiedad.cs">
       <SubType>Form</SubType>
@@ -151,6 +170,9 @@
     <EmbeddedResource Include="Formularios\frmAltaEscribanos.resx">
       <DependentUpon>frmAltaEscribanos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAltaMoneda.resx">
+      <DependentUpon>frmAltaMoneda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmAltaPropiedades.resx">
       <DependentUpon>frmAltaPropiedades.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmFiltroEscribanos.resx">
       <DependentUpon>frmFiltroEscribanos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmFiltroMoneda.resx">
+      <DependentUpon>frmFiltroMoneda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmFiltroPropiedades.resx">
       <DependentUpon>frmFiltroPropiedades.cs</DependentUpon>
@@ -174,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmModificarEliminarEscribano.resx">
       <DependentUpon>frmModificarEliminarEscribano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmModificarEliminarMoneda.resx">
+      <DependentUpon>frmModificarEliminarMoneda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmModificarEliminarPropiedad.resx">
       <DependentUpon>frmModificarEliminarPropiedad.cs</DependentUpon>

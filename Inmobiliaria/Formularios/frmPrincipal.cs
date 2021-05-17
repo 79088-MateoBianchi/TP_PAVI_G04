@@ -48,5 +48,10 @@ namespace Inmobiliaria
             Application.Exit();
         }
 
+        private void aBMMonedasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFiltroMoneda ventana = new frmFiltroMoneda();
+            ventana.ShowDialog();
+        }
     }
 }

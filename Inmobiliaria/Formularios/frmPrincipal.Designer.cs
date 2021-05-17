@@ -41,12 +41,14 @@ namespace Inmobiliaria
             this.escribanosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMEscribanosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.departamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ABMDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vistasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ABMDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.monedasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMMonedasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -72,6 +74,7 @@ namespace Inmobiliaria
             this.propiedadesToolStripMenuItem,
             this.escribanosToolStripMenuItem,
             this.departamentosToolStripMenuItem,
+            this.monedasToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
@@ -151,6 +154,14 @@ namespace Inmobiliaria
             this.departamentosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.departamentosToolStripMenuItem.Text = "Departamentos";
             // 
+            // ABMDepartamentosToolStripMenuItem
+            // 
+            this.ABMDepartamentosToolStripMenuItem.Image = global::Inmobiliaria.Properties.Resources.ABM_Departamentos;
+            this.ABMDepartamentosToolStripMenuItem.Name = "ABMDepartamentosToolStripMenuItem";
+            this.ABMDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.ABMDepartamentosToolStripMenuItem.Text = "ABM Departamentos";
+            this.ABMDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.ABMDepartamentosToolStripMenuItem_Click);
+            // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
@@ -187,13 +198,20 @@ namespace Inmobiliaria
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // ABMDepartamentosToolStripMenuItem
+            // monedasToolStripMenuItem
             // 
-            this.ABMDepartamentosToolStripMenuItem.Image = global::Inmobiliaria.Properties.Resources.ABM_Departamentos;
-            this.ABMDepartamentosToolStripMenuItem.Name = "ABMDepartamentosToolStripMenuItem";
-            this.ABMDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.ABMDepartamentosToolStripMenuItem.Text = "ABM Departamentos";
-            this.ABMDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.ABMDepartamentosToolStripMenuItem_Click);
+            this.monedasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aBMMonedasToolStripMenuItem});
+            this.monedasToolStripMenuItem.Name = "monedasToolStripMenuItem";
+            this.monedasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.monedasToolStripMenuItem.Text = "Monedas";
+            // 
+            // aBMMonedasToolStripMenuItem
+            // 
+            this.aBMMonedasToolStripMenuItem.Name = "aBMMonedasToolStripMenuItem";
+            this.aBMMonedasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aBMMonedasToolStripMenuItem.Text = "ABM Monedas";
+            this.aBMMonedasToolStripMenuItem.Click += new System.EventHandler(this.aBMMonedasToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -236,5 +254,7 @@ namespace Inmobiliaria
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aBMEmpleadosToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem monedasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aBMMonedasToolStripMenuItem;
     }
 }
