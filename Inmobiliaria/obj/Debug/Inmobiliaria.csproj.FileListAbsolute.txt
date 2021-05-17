@@ -32,3 +32,6 @@ D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.fr
 D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.Formularios.frmFiltroProvincias.resources
 D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.Formularios.frmAltaProvincia.resources
 D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.Formularios.frmEliminarProvincia.resources
+D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.Formularios.frmEliminarDepto.resources
+D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.Formularios.frmFiltroDeptos.resources
+D:\UTN-2021\PAV1\Repositorios\TP_PAVI_G04\Inmobiliaria\obj\Debug\Inmobiliaria.Formularios.frmAltaDepto.resources

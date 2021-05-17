@@ -47,5 +47,11 @@ namespace Inmobiliaria
             frmFiltroProvincias ventana = new frmFiltroProvincias();
             ventana.ShowDialog();
         }
+
+        private void aBMDeptosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFiltroDeptos ventana = new frmFiltroDeptos();
+            ventana.ShowDialog();
+        }
     }
 }

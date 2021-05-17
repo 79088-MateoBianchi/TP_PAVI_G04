@@ -12,21 +12,21 @@ using System.Windows.Forms;
 
 namespace Inmobiliaria.Formularios
 {
-    public partial class frmFiltroProvincias : Form
+    public partial class frmFiltroDeptos : Form
     {
-        public frmFiltroProvincias()
+        public frmFiltroDeptos()
         {
             InitializeComponent();
         }
 
-        private void frmFiltroProvincias_Load(object sender, EventArgs e)
+        private void frmFiltroDeptos_Load(object sender, EventArgs e)
         {
             txtIdProvincia.Focus();
         }
 
-        private void chkTodasProvincias_CheckedChanged(object sender, EventArgs e)
+        private void chkTodosDeptos_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkTodasProvincias.Checked)
+            if (chkTodosDeptos.Checked)
             {
                 txtIdProvincia.Text = "";
                 txtIdProvincia.Enabled = false;
@@ -41,20 +41,21 @@ namespace Inmobiliaria.Formularios
         {
             txtIdProvincia.Text = "";
             txtIdProvincia.Focus();
-            chkTodasProvincias.Checked = false;
-            for (int i = 0; i < grillaProvincias.Rows.Count; i++)
+            chkTodosDeptos.Checked = false;
+            for (int i = 0; i < grillaDeptos.Rows.Count; i++)
             {
-                DataGridViewRow deleteRow = grillaProvincias.Rows[i];
-                grillaProvincias.Rows.Remove(deleteRow);
+                DataGridViewRow deleteRow = grillaDeptos.Rows[i];
+                grillaDeptos.Rows.Remove(deleteRow);
             }
-            grillaProvincias.Refresh();
+            grillaDeptos.Refresh();
         }
 
-        private void CargarGrillaProvincias()
+
+        private void CargarGrillaDeptos()
         {
             try
             {
-                grillaProvincias.DataSource = AD_Provincias.ObtenerProvincias();
+                grillaDeptos.DataSource = AD_Deptos.ObtenerDeptos();
 
             }
             catch (Exception)
@@ -66,9 +67,9 @@ namespace Inmobiliaria.Formularios
 
         private void btnBuscarProvincias_Click(object sender, EventArgs e)
         {
-            if (chkTodasProvincias.Checked)
+            if (chkTodosDeptos.Checked)
             {
-                CargarGrillaProvincias();
+                CargarGrillaDeptos();
             }
             else if (txtIdProvincia.Text.Equals(""))
             {
@@ -77,8 +78,8 @@ namespace Inmobiliaria.Formularios
             }
             else
             {
-                grillaProvincias.DataSource = AD_Provincias.ObtenerProvinciaPorId(int.Parse(txtIdProvincia.Text.Trim()));
-                if (grillaProvincias.Rows.Count == 0)
+                grillaDeptos.DataSource = AD_Deptos.ObtenerDeptoPorIdProvincia(int.Parse(txtIdProvincia.Text.Trim()));
+                if (grillaDeptos.Rows.Count == 0)
                 {
                     MessageBox.Show("No se encontraron resultados!", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LimpiarCampos();
@@ -86,17 +87,17 @@ namespace Inmobiliaria.Formularios
             }
         }
 
-
-        private void grillaProvincias_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void grillaDeptos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int indice = e.RowIndex;
-            DataGridViewRow filaSeleccionada = grillaProvincias.Rows[indice];
+            DataGridViewRow filaSeleccionada = grillaDeptos.Rows[indice];
 
-            Provincia p = new Provincia();
-            p.IdProvincia = int.Parse(filaSeleccionada.Cells[0].Value.ToString());
-            p.NombreProvincia = filaSeleccionada.Cells[1].Value.ToString();
+            Depto d = new Depto();
+            d.IdDepto = int.Parse(filaSeleccionada.Cells[0].Value.ToString());
+            d.NombreDepto = filaSeleccionada.Cells[1].Value.ToString();
+            d.IdProvinciaDepto = int.Parse(filaSeleccionada.Cells[2].Value.ToString());
 
-            frmEliminarProvincia ventana = new frmEliminarProvincia(p);
+            frmEliminarDepto ventana = new frmEliminarDepto(d);
             ventana.ShowDialog();
         }
 
@@ -107,7 +108,7 @@ namespace Inmobiliaria.Formularios
 
         private void btnAgregarProvincia_Click(object sender, EventArgs e)
         {
-            frmAltaProvincia ventana = new frmAltaProvincia();
+            frmAltaDepto ventana = new frmAltaDepto();
             ventana.ShowDialog();
         }
 

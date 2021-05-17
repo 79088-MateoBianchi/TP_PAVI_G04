@@ -35,19 +35,19 @@ namespace Inmobiliaria.Formularios
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            DialogResult confirmacion = MessageBox.Show("¿Desea eliminar el departamento seleccionado?", "Confirmación", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            DialogResult confirmacion = MessageBox.Show("¿Desea eliminar la provincia seleccionada?", "Confirmación", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (confirmacion == DialogResult.OK)
             {
                 Provincia p = ObtenerDatosProvincia();
                 bool resultado = AD_Provincias.EliminarProvincia(p);
                 if (resultado)
                 {
-                    MessageBox.Show("Propiedad eliminada con exito!");
+                    MessageBox.Show("Provincia eliminada con exito!");
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Error al eliminar la propiedad!");
+                    MessageBox.Show("Error al eliminar la provincia!");
                 }
 
             }

@@ -34,9 +34,16 @@ namespace Inmobiliaria.Formularios
 
         private void SetUltimoIdProvincia()
         {
-            int ultimoId = AD_Provincias.ObtenerUltimoIdProvincia() + 1;
+            int ultimoId = AD_Provincias.ObtenerUltimoIdProvincia();
 
-            txtNroProvincia.Text = ultimoId.ToString();
+            if(ultimoId == 0)
+            {
+                MessageBox.Show("Ocurrió un error al acceder a los datos de la provincia", "Error");
+            } else
+            {
+                ultimoId++;
+                txtNroProvincia.Text = ultimoId.ToString();
+            }
         }
 
 
@@ -59,7 +66,8 @@ namespace Inmobiliaria.Formularios
             }
             else
             {
-                string nombreProvincia = txtNombreProvincia.Text.Trim();
+                Provincia p = ObtenerDatosProvincia();
+                string nombreProvincia = p.NombreProvincia;
                 bool existe = AD_Provincias.ExisteProvincia(nombreProvincia);
                 if (existe)
                 {
@@ -68,7 +76,6 @@ namespace Inmobiliaria.Formularios
                 }
                 else
                 {
-                    Provincia p = new Provincia();
                     bool resultado = AD_Provincias.AgregarProvincia(p);
 
                     if (resultado)
