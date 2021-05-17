@@ -42,13 +42,14 @@ namespace Inmobiliaria
             this.aBMEscribanosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.departamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ABMDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.localidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMLocalidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vistasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.localidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aBMLocalidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.publicidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -75,6 +76,7 @@ namespace Inmobiliaria
             this.escribanosToolStripMenuItem,
             this.departamentosToolStripMenuItem,
             this.localidadesToolStripMenuItem,
+            this.publicidadesToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
@@ -163,6 +165,21 @@ namespace Inmobiliaria
             this.ABMDepartamentosToolStripMenuItem.Text = "ABM Departamentos";
             this.ABMDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.ABMDepartamentosToolStripMenuItem_Click);
             // 
+            // localidadesToolStripMenuItem
+            // 
+            this.localidadesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aBMLocalidadesToolStripMenuItem});
+            this.localidadesToolStripMenuItem.Name = "localidadesToolStripMenuItem";
+            this.localidadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.localidadesToolStripMenuItem.Text = "Localidades";
+            // 
+            // aBMLocalidadesToolStripMenuItem
+            // 
+            this.aBMLocalidadesToolStripMenuItem.Name = "aBMLocalidadesToolStripMenuItem";
+            this.aBMLocalidadesToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.aBMLocalidadesToolStripMenuItem.Text = "ABM Localidades";
+            this.aBMLocalidadesToolStripMenuItem.Click += new System.EventHandler(this.aBMLocalidadesToolStripMenuItem_Click);
+            // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
@@ -199,20 +216,11 @@ namespace Inmobiliaria
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // localidadesToolStripMenuItem
+            // publicidadesToolStripMenuItem
             // 
-            this.localidadesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aBMLocalidadesToolStripMenuItem});
-            this.localidadesToolStripMenuItem.Name = "localidadesToolStripMenuItem";
-            this.localidadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.localidadesToolStripMenuItem.Text = "Localidades";
-            // 
-            // aBMLocalidadesToolStripMenuItem
-            // 
-            this.aBMLocalidadesToolStripMenuItem.Name = "aBMLocalidadesToolStripMenuItem";
-            this.aBMLocalidadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aBMLocalidadesToolStripMenuItem.Text = "ABM Localidades";
-            this.aBMLocalidadesToolStripMenuItem.Click += new System.EventHandler(this.aBMLocalidadesToolStripMenuItem_Click);
+            this.publicidadesToolStripMenuItem.Name = "publicidadesToolStripMenuItem";
+            this.publicidadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.publicidadesToolStripMenuItem.Text = "Publicidades";
             // 
             // frmPrincipal
             // 
@@ -257,5 +265,6 @@ namespace Inmobiliaria
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem localidadesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aBMLocalidadesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem publicidadesToolStripMenuItem;
     }
 }

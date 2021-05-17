@@ -87,6 +87,7 @@ namespace Inmobiliaria.Formularios
 
 
 
+
         private void btnAltaEmpleado_Click(object sender, EventArgs e)
         {
             string leg = "";
