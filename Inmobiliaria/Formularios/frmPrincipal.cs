@@ -59,5 +59,11 @@ namespace Inmobiliaria
             frmFiltroMoneda ventana = new frmFiltroMoneda();
             ventana.ShowDialog();
         }
+
+        private void aBMEncExpensasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFiltroEncExpensas ventana = new frmFiltroEncExpensas();
+            ventana.ShowDialog();
+        }
     }
 }
