@@ -43,10 +43,17 @@ namespace Inmobiliaria
             ventana.ShowDialog();
         }
 
+        private void aBMLocalidadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFiltroLocalidades ventana = new frmFiltroLocalidades();
+            ventana.ShowDialog();
+        }
+
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
 
     }
 }
