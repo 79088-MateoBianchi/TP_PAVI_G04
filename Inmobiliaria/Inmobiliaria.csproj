@@ -53,9 +53,12 @@
     <Compile Include="AccesoADatos\AD_Escribanos.cs" />
     <Compile Include="AccesoADatos\AD_Monedas.cs" />
     <Compile Include="AccesoADatos\AD_Propiedades.cs" />
+    <Compile Include="AccesoADatos\AD_Provincias.cs" />
     <Compile Include="AccesoADatos\AD_TiposOperaciones.cs" />
     <Compile Include="AccesoADatos\AD_TiposPropiedades.cs" />
+    <Compile Include="AccesoADatos\AD_Deptos.cs" />
     <Compile Include="Entidades\Departamento.cs" />
+    <Compile Include="Entidades\Depto.cs" />
     <Compile Include="Entidades\Empleados.cs" />
     <Compile Include="Entidades\Escribano.cs" />
     <Compile Include="Entidades\Moneda.cs" />
@@ -65,6 +68,12 @@
     </Compile>
     <Compile Include="Formularios\frmAltaEmpleado.Designer.cs">
       <DependentUpon>frmAltaEmpleado.cs</DependentUpon>
+    <Compile Include="Entidades\Provincia.cs" />
+    <Compile Include="Formularios\frmAltaDepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAltaDepto.Designer.cs">
+      <DependentUpon>frmAltaDepto.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmAltaEscribanos.cs">
       <SubType>Form</SubType>
@@ -89,6 +98,29 @@
     </Compile>
     <Compile Include="Formularios\frmFiltroEmpleados.Designer.cs">
       <DependentUpon>frmFiltroEmpleados.cs</DependentUpon>
+    <Compile Include="Formularios\frmAltaProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAltaProvincia.Designer.cs">
+      <DependentUpon>frmAltaProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmEliminarDepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmEliminarDepto.Designer.cs">
+      <DependentUpon>frmEliminarDepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmEliminarProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmEliminarProvincia.Designer.cs">
+      <DependentUpon>frmEliminarProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroDeptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroDeptos.Designer.cs">
+      <DependentUpon>frmFiltroDeptos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmFiltroEscribanos.cs">
       <SubType>Form</SubType>
@@ -119,6 +151,12 @@
     </Compile>
     <Compile Include="Formularios\frmFiltroDepartamentos.Designer.cs">
       <DependentUpon>frmFiltroDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroProvincias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroProvincias.Designer.cs">
+      <DependentUpon>frmFiltroProvincias.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmLogin.cs">
       <SubType>Form</SubType>
@@ -166,6 +204,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\frmAltaEmpleado.resx">
       <DependentUpon>frmAltaEmpleado.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\frmAltaDepto.resx">
+      <DependentUpon>frmAltaDepto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmAltaEscribanos.resx">
       <DependentUpon>frmAltaEscribanos.cs</DependentUpon>
@@ -178,6 +218,17 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmFiltroEmpleados.resx">
       <DependentUpon>frmFiltroEmpleados.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\frmAltaProvincia.resx">
+      <DependentUpon>frmAltaProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmEliminarDepto.resx">
+      <DependentUpon>frmEliminarDepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmEliminarProvincia.resx">
+      <DependentUpon>frmEliminarProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmFiltroDeptos.resx">
+      <DependentUpon>frmFiltroDeptos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmFiltroEscribanos.resx">
       <DependentUpon>frmFiltroEscribanos.cs</DependentUpon>
@@ -193,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmFiltroDepartamentos.resx">
       <DependentUpon>frmFiltroDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmFiltroProvincias.resx">
+      <DependentUpon>frmFiltroProvincias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
