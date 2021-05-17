@@ -50,6 +50,7 @@
     <Compile Include="AccesoADatos\AD_Barrios.cs" />
     <Compile Include="AccesoADatos\AD_Departamentos.cs" />
     <Compile Include="AccesoADatos\AD_Empleados.cs" />
+    <Compile Include="AccesoADatos\AD_EncExpensas.cs" />
     <Compile Include="AccesoADatos\AD_Escribanos.cs" />
     <Compile Include="AccesoADatos\AD_Localidades.cs" />
     <Compile Include="AccesoADatos\AD_Monedas.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="AccesoADatos\AD_Proveedores.cs" />
     <Compile Include="Entidades\Departamento.cs" />
     <Compile Include="Entidades\Empleados.cs" />
+    <Compile Include="Entidades\EncExpensas.cs" />
     <Compile Include="Entidades\Escribano.cs" />
     <Compile Include="Entidades\Moneda.cs" />
     <Compile Include="Entidades\Localidades.cs" />
@@ -69,6 +71,12 @@
     </Compile>
     <Compile Include="Formularios\frmAltaEmpleado.Designer.cs">
       <DependentUpon>frmAltaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAltaEncExpensas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAltaEncExpensas.Designer.cs">
+      <DependentUpon>frmAltaEncExpensas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmAltaEscribanos.cs">
       <SubType>Form</SubType>
@@ -105,6 +113,12 @@
     </Compile>
     <Compile Include="Formularios\frmFiltroEmpleados.Designer.cs">
       <DependentUpon>frmFiltroEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroEncExpensas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroEncExpensas.Designer.cs">
+      <DependentUpon>frmFiltroEncExpensas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmFiltroEscribanos.cs">
       <SubType>Form</SubType>
@@ -153,6 +167,12 @@
     </Compile>
     <Compile Include="Formularios\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmModificarEliminarEncExpensas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmModificarEliminarEncExpensas.Designer.cs">
+      <DependentUpon>frmModificarEliminarEncExpensas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmModificarEliminarEscribano.cs">
       <SubType>Form</SubType>
@@ -212,7 +232,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmAltaMoneda.resx">
       <DependentUpon>frmAltaMoneda.cs</DependentUpon>
-    </EmbeddedResource>  
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmAltaLocalidad.resx">
       <DependentUpon>frmAltaLocalidad.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,7 +250,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmFiltroMoneda.resx">
       <DependentUpon>frmFiltroMoneda.cs</DependentUpon>
-    </EmbeddedResource>  
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmFiltroLocalidades.resx">
       <DependentUpon>frmFiltroLocalidades.cs</DependentUpon>
     </EmbeddedResource>
