@@ -87,22 +87,6 @@ namespace Inmobiliaria
             }
         }
 
-        private void grillaDepartamentos_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int indice = e.RowIndex;
-            DataGridViewRow filaSeleccionada = grillaDepartamentos.Rows[indice];
-
-            int idEdificio = int.Parse(filaSeleccionada.Cells["idEdificio"].Value.ToString());
-            int nroPiso = int.Parse(filaSeleccionada.Cells["Piso"].Value.ToString());
-            string denominacion = filaSeleccionada.Cells["Denominacion"].Value.ToString();
-
-            Departamento d = AD_Departamentos.ObtenerDepartamentoPorEdificioPisoDenominacion(idEdificio, nroPiso, denominacion);
-
-            frmModificarEliminarDepartamento ventana = new frmModificarEliminarDepartamento(d);
-            ventana.ShowDialog();
-        }
-
-
         private void btnLimpiarCampos_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
@@ -121,5 +105,19 @@ namespace Inmobiliaria
             this.Close();
         }
 
+        private void grillaDepartamentos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indice = e.RowIndex;
+            DataGridViewRow filaSeleccionada = grillaDepartamentos.Rows[indice];
+
+            int idEdificio = int.Parse(filaSeleccionada.Cells["idEdificio"].Value.ToString());
+            int nroPiso = int.Parse(filaSeleccionada.Cells["Piso"].Value.ToString());
+            string denominacion = filaSeleccionada.Cells["Denominacion"].Value.ToString();
+
+            Departamento d = AD_Departamentos.ObtenerDepartamentoPorEdificioPisoDenominacion(idEdificio, nroPiso, denominacion);
+
+            frmModificarEliminarDepartamento ventana = new frmModificarEliminarDepartamento(d);
+            ventana.ShowDialog();
+        }
     }
 }

@@ -51,15 +51,6 @@ namespace Inmobiliaria
         private void aBMMonedasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmFiltroMoneda ventana = new frmFiltroMoneda();
-        private void aBMProvinciasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmFiltroProvincias ventana = new frmFiltroProvincias();
-            ventana.ShowDialog();
-        }
-
-        private void aBMDeptosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmFiltroDeptos ventana = new frmFiltroDeptos();
             ventana.ShowDialog();
         }
     }
