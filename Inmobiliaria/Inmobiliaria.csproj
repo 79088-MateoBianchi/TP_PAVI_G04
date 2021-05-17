@@ -55,10 +55,12 @@
     <Compile Include="AccesoADatos\AD_Propiedades.cs" />
     <Compile Include="AccesoADatos\AD_TiposOperaciones.cs" />
     <Compile Include="AccesoADatos\AD_TiposPropiedades.cs" />
+    <Compile Include="AccesoADatos\AD_Proveedores.cs" />
     <Compile Include="Entidades\Departamento.cs" />
     <Compile Include="Entidades\Empleados.cs" />
     <Compile Include="Entidades\Escribano.cs" />
     <Compile Include="Entidades\Propiedad.cs" />
+    <Compile Include="Entidades\Proveedor.cs" />
     <Compile Include="Formularios\frmAltaEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +78,12 @@
     </Compile>
     <Compile Include="Formularios\frmAltaPropiedades.Designer.cs">
       <DependentUpon>frmAltaPropiedades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAltaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAltaProveedor.Designer.cs">
+      <DependentUpon>frmAltaProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmFiltroEmpleados.cs">
       <SubType>Form</SubType>
@@ -107,6 +115,12 @@
     <Compile Include="Formularios\frmFiltroDepartamentos.Designer.cs">
       <DependentUpon>frmFiltroDepartamentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmFiltroProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmFiltroProveedores.Designer.cs">
+      <DependentUpon>frmFiltroProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +145,12 @@
     <Compile Include="Formularios\frmModificarEliminarDepartamento.Designer.cs">
       <DependentUpon>frmModificarEliminarDepartamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmModificarEliminarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmModificarEliminarProveedor.Designer.cs">
+      <DependentUpon>frmModificarEliminarProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmModificarEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +174,9 @@
     <EmbeddedResource Include="Formularios\frmAltaPropiedades.resx">
       <DependentUpon>frmAltaPropiedades.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAltaProveedor.resx">
+      <DependentUpon>frmAltaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmFiltroEmpleados.resx">
       <DependentUpon>frmFiltroEmpleados.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +192,9 @@
     <EmbeddedResource Include="Formularios\frmFiltroDepartamentos.resx">
       <DependentUpon>frmFiltroDepartamentos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmFiltroProveedores.resx">
+      <DependentUpon>frmFiltroProveedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmModificarEliminarDepartamento.resx">
       <DependentUpon>frmModificarEliminarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmModificarEliminarProveedor.resx">
+      <DependentUpon>frmModificarEliminarProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmModificarEmpleado.resx">
       <DependentUpon>frmModificarEmpleado.cs</DependentUpon>

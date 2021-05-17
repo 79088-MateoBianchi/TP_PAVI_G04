@@ -48,5 +48,15 @@ namespace Inmobiliaria
             Application.Exit();
         }
 
+        private void archivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aBMProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFiltroProveedores ventana = new frmFiltroProveedores();
+            ventana.ShowDialog();
+        }
     }
 }
